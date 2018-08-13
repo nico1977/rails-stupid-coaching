@@ -1,0 +1,15 @@
+
+<p>Find me in app/views/questions/ask.html.erb</p>
+
+
+
+    <h1>Stupid Coaching</h1>
+    <h3>Ask your Coach anything</h3>
+
+    <%= form_tag("/answer", method: "get") do %>
+      <%= label_tag(:question, "Ask:") %>
+      <%= text_field_tag(:question) %>
+      <%= submit_tag("Question") %>
+    <% end %>
+
+
